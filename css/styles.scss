@@ -45,6 +45,16 @@ body, p, li, a, span {
   color: #8C6A52;
 }
 
+/* Boks rundt om introtekst */
+.intro-box {
+  background-color: #F7F2EA;      // vælg selv (evt. #F7F2EA)
+  padding: 2rem;
+  border: 5px solid #C8D5C0;   // din brun eller primary
+  border-radius: 12px;         // rundere hjørner
+  max-width: 900px;
+  margin: 0 auto;              // centrer boksen
+}
+
 
 
 
@@ -96,3 +106,5 @@ body, p, li, a, span {
 .my-navbar .navbar-brand {
   color: #8C6A52 !important;   /* din ønskede farve */
 }
+
+
