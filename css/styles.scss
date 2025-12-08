@@ -107,4 +107,19 @@ body, p, li, a, span {
   color: #8C6A52 !important;   /* din ønskede farve */
 }
 
+/* underside om DE TRE LOKATIONER */
+
+
+/* Tekst og billede samme størrelse */
+.card .row {
+  display: flex;
+  align-items: stretch;
+}
+
+.card-img-equal {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
