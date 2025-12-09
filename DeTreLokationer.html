@@ -2,13 +2,16 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
-
     <title>Underside - De tre lokationer</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Dit eget stylesheet -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +20,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <body>
+
+<!--- Navbar --->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/Logo1.png" alt="Logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-5">
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Workshops & Events</a></li>
+                        <li><a class="dropdown-item" href="DeTreLokationer.html">De Tre Lokationer</a></li>
+                        <li><a class="dropdown-item" href="#">Om Iværksættermiljøerne</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Hjem</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<br>
+<br>
 
 <section>
 
@@ -31,6 +81,15 @@
             Her får du adgang til sparring, coaching, workshops og et stærkt netværk på tværs af fagligheder.
             Uanset om du har en færdig idé eller bare lyst til at udforske innovation, finder du her et trygt og åbent rum til at udvikle dig – sammen med andre, der vil fremad.</p>
     </div>
+
+    <!--- Genvej -->
+    <div class="d-flex justify-content-center gap-3 my-4">
+        <a href="#koege" class="btn btn-outline-secondary">Køge</a>
+        <a href="#naestved" class="btn btn-outline-secondary">Næstved</a>
+        <a href="#slagelse" class="btn btn-outline-secondary">Slagelse</a>
+    </div>
+
+
     <!--- Overskrift over kort --->
     <div class="col-12 text-center my-4">
         <h1>Find din afdeling</h1>

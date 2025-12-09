@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-	<meta charset="utf-8">
-	
-	<title>Dette er 1 semester eksamens foside</title>
-	
-	<meta name="robots" content="All">
-	<meta name="author" content="Udgiver">
-	<meta name="copyright" content="Information om copyright">
-	
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Dette er 1 semester eksamens foside</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Din egen CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
+    <!-- FIX: Navbar dropdown klik-problem -->
+    <style>
+        .navbar {
+            position: relative;
+            z-index: 2000; /* sikrer dropdown altid er klikbar */
+        }
+    </style>
+
 </head>
 
 <body>
 
-
 <!--- Navbar --->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Min Side</a>
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/Logo1.png" alt="Logo" class="logo-img">
+        </a>
+
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,8 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto me-5">
 
-
-            <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                         Menu
                     </a>
@@ -43,9 +56,9 @@
                         <li><a class="dropdown-item" href="#">Workshops & Events</a></li>
                         <li><a class="dropdown-item" href="DeTreLokationer.html">De Tre Lokationer</a></li>
                         <li><a class="dropdown-item" href="#">Om Iværksættermiljøerne</a></li>
-
                     </ul>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Hjem</a>
                 </li>
@@ -54,14 +67,11 @@
                     <a class="nav-link" href="#">Kontakt</a>
                 </li>
 
-
-
-
-
             </ul>
         </div>
     </div>
 </nav>
+
 
 <section>
     <!--- Billede på forsiden & overskrift --->
@@ -69,24 +79,25 @@
         <img src="images/letitgrow.jpg" class="banner-img img-fluid w-100 " alt="ComputerIGræs">
         <h1 class="overlay-text">Grow Your Vision Together</h1>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--- Introduktions tekst bootstrap+flexbox --->
+
+    <br><br><br><br>
+
+    <!--- Intro tekst --->
     <div class="intro-box d-flex flex-column justify-content-center align-items-center text-center text-brown">
-    <h1 class="fw-bold display-4">Skab. Del. Voks. Et Fællesskab for Fremtidens Iværksættere.</h1>
+        <h1 class="fw-bold display-4">Skab. Del. Voks. Et Fællesskab for Fremtidens Iværksættere.</h1>
         <p class="lead mt-4 w-75 mx-auto">
             Connected Starters samler studerende fra hele Zealand i tre kreative iværksættermiljøer i Slagelse, Køge og Næstved.
             Her får du adgang til sparring, coaching, workshops og et stærkt netværk på tværs af fagligheder.
-            Uanset om du har en færdig idé eller bare lyst til at udforske innovation, finder du her et trygt og åbent rum til at udvikle dig – sammen med andre, der vil fremad.</p>
+            Uanset om du har en færdig idé eller bare lyst til at udforske innovation, finder du her et trygt og åbent rum til at udvikle dig – sammen med andre, der vil fremad.
+        </p>
     </div>
 
-<!--- Overskrift over kort --->
+    <!--- Overskrift over kort --->
     <div class="col-12 text-center my-4">
-    <h1>Find din afdeling</h1>
+        <h1>Find din afdeling</h1>
     </div>
-<!--- Cards med de 3 skoler --->
+
+    <!--- Cards --->
     <div class="container my-5">
         <div class="row g-4">
 
@@ -129,85 +140,47 @@
         </div>
     </div>
 
-
 </section>
 
 <!-- Footer -->
 <footer class="bg-body-tertiary text-center">
-    <!-- Grid container -->
     <div class="container p-4">
-        <!-- Section: Social media -->
+
+        <!-- Socials -->
         <section class="mb-4">
-            <!-- Facebook -->
-            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
-
-            <!-- Twitter -->
-            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-twitter"></i
-            ></a>
-
-            <!-- Google -->
-            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-google"></i
-            ></a>
-
-            <!-- Instagram -->
-            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-instagram"></i
-            ></a>
-
-            <!-- Linkedin -->
-            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-linkedin-in"></i
-            ></a>
-
-            <!-- Github -->
-            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-github"></i
-            ></a>
+            <a class="btn btn-outline btn-floating m-1" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline btn-floating m-1" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline btn-floating m-1" href="#!"><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline btn-floating m-1" href="#!"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline btn-floating m-1" href="#!"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline btn-floating m-1" href="#!"><i class="fab fa-github"></i></a>
         </section>
-        <!-- Section: Social media -->
 
-        <!-- Section: Form -->
-        <section class="">
+        <!-- Newsletter -->
+        <section>
             <form action="">
-                <!--Grid row-->
                 <div class="row d-flex justify-content-center">
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <p class="pt-2">
-                            <strong>Sign up for our newsletter</strong>
-                        </p>
-                    </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
+                    <div class="col-auto">
+                        <p class="pt-2"><strong>Sign up for our newsletter</strong></p>
+                    </div>
+
                     <div class="col-md-5 col-12">
-                        <!-- Email input -->
-                        <div data-mdb-input-init class="form-outline mb-4">
+                        <div class="form-outline mb-4">
                             <input type="email" id="form5Example24" class="form-control" />
                             <label class="form-label" for="form5Example24">Email address</label>
                         </div>
                     </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
                     <div class="col-auto">
-                        <!-- Submit button -->
-                        <button data-mdb-ripple-init type="submit" class="btn btn-outline mb-4">
-                            Subscribe
-                        </button>
+                        <button type="submit" class="btn btn-outline mb-4">Subscribe</button>
                     </div>
-                    <!--Grid column-->
+
                 </div>
-                <!--Grid row-->
             </form>
         </section>
-        <!-- Section: Form -->
 
-        <!-- Section: Text -->
+        <!-- Text -->
         <section class="mb-4">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
@@ -215,110 +188,34 @@
                 harum corrupti dicta, aliquam sequi voluptate quas.
             </p>
         </section>
-        <!-- Section: Text -->
 
-        <!-- Section: Links -->
+        <!-- Links -->
         <section class="">
-            <!--Grid row-->
             <div class="row">
-                <!--Grid column-->
+
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Links</h5>
-
                     <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
+                        <li><a class="text-body" href="#!">Link 1</a></li>
+                        <li><a class="text-body" href="#!">Link 2</a></li>
+                        <li><a class="text-body" href="#!">Link 3</a></li>
+                        <li><a class="text-body" href="#!">Link 4</a></li>
                     </ul>
                 </div>
-                <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="text-body" href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a class="text-body" href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
             </div>
-            <!--Grid row-->
         </section>
-        <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
 
-    <!-- Copyright -->
+    </div>
+
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2020 Copyright:
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
-    <!-- Copyright -->
 </footer>
-<!-- Footer -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS (korrekt placeret) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

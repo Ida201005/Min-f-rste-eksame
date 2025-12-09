@@ -107,6 +107,56 @@ body, p, li, a, span {
   color: #8C6A52 !important;   /* din ønskede farve */
 }
 
+/* Navbar ændring i farve */
+/* Gør dropdown-menuen primary */
+.navbar .dropdown-menu {
+  background-color: var(--bs-primary);
+}
+
+/* Gør dropdown-items hvide */
+.navbar .dropdown-item {
+  color: white;
+}
+
+/* Gør hover-effekt lidt lysere */
+.navbar .dropdown-item:hover {
+  background-color: rgba(255,255,255,0.15);
+  color: #8C6A52;
+}
+
+/* Ændr border-farven til secondary */
+.navbar .dropdown-menu {
+  border: 3px solid;
+  color: #8C6A52;
+}
+
+/* Hvis du også vil give den runde hjørner i samme stil */
+.navbar .dropdown-menu {
+  border-radius: 0.5rem; /* valgfrit */
+}
+
+/* Logo */
+.navbar-brand .logo-img {
+  max-height: 100%;   /* fylder hele navbaren */
+  width: auto;
+}
+.logo-img {
+  height: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* underside om DE TRE LOKATIONER */
 
 
