@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <title>Dette er 1 semester eksamens foside</title>
+
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Din egen CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- FIX: Navbar dropdown klik-problem -->
+    <style>
+        .navbar {
+            position: relative;
+            z-index: 2000; /* sikrer dropdown altid er klikbar */
+        }
+    </style>
+
+    <!--- Bootstrap ikoner -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+<!--- Navbar --->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/Logo1.png" alt="Logo" class="logo-img">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto me-5">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Workshops&Events.html">Workshops & Events</a></li>
+                        <li><a class="dropdown-item" href="DeTreLokationer.html">De Tre Lokationer</a></li>
+                        <li><a class="dropdown-item" href="kontakt.html">Kontakt</a></li>
+                        <li><a class="dropdown-item" href="sponsor.html">Sponsor</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Hjem</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+
+<section>
+    <!--- Intro tekst --->
+    <div class="intro-box d-flex flex-column justify-content-center align-items-center text-center text-brown">
+        <h1 class="fw-bold display-4">Her finder du, de forskellige workshops, events og konkurrancer</h1>
+        <p class="lead mt-4 w-75 mx-auto">
+            Connected Starters tilbyder inspirerende workshops, events og iværksætterkonkurrencer, hvor studerende kan udvikle idéer, få sparring og møde andre unge med entreprenante ambitioner. Her får de praktiske værktøjer, feedback fra eksperter og mulighed for at teste deres idéer i et trygt og motiverende fællesskab.        </p>
+    </div>
+    <br>
+
+    <!--- Genvej -->
+    <div class="d-flex justify-content-center gap-3 my-4">
+        <a href="#koege" class="btn btn-outline-secondary">Køge</a>
+        <a href="#naestved" class="btn btn-outline-secondary">Næstved</a>
+        <a href="#slagelse" class="btn btn-outline-secondary">Slagelse</a>
+    </div>
+
+    <!--- Overskrift over kort 1 --->
+    <div class="col-12 text-center my-4">
+        <h1>Workshops</h1>
+    </div>
+    <!--- Cards med de 3 workshops --->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/Workshop1.jpg" class="card-img-top" alt="Billede 1">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Idegenerering</h2>
+                        <h5>Har du en ide? Eller vil du finde en?</h5>
+                        <p class="card-text">På vores workshop om idegenering, skaber vi sammen, og hjælper hinanden videre.</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Køge: Lyngvej 21, 4600</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver tirsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Du behøver ikke at forberede noget inden. Bare husk det gode humør</p>
+                        <a href="#koege" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/workshop%202%20budskab.jpg" class="card-img-top" alt="Billede 2">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Budskab & Tekstindhold</h2>
+                        <h5>Er du i tvivl om dit budskab? Eller ønsker du at formidle dig bedre?</h5>
+                        <p class="card-text">På vores workshop om budskab og tekstindhold, får du hjælp til at formidle dit produkt.</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Næstved: Femøvej 3, 4700</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver onsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Vi håber at du har lyst til, at skabe noget fedt i fællelsskab</p>
+                        <a href="#naestved" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/wokshop3%20partnere.jpg" class="card-img-top" alt="Billede 3">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Skab en connection</h2>
+                        <h5>Vil du kende de rigtige? Er du klar til at pitche din ide?</h5>
+                        <p class="card-text">På vores workshop om “Skab en connection”, får du mulighed for at blive sat sammen med eksperter, der kan guide der videre.</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Køge: Lyngvej 21, 4600</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver tirsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Du behøver ikke at forberede noget inden. Bare husk det gode humør</p>
+                        <a href="#slagelse" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--- Overskrift over kort 2 --->
+    <div class="col-12 text-center my-4">
+        <h1>Events</h1>
+    </div>
+    <!--- Cards med de 3 Events --->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/event1%20innovation.jpg" class="card-img-top" alt="Billede 1">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Digital Innovation Day</h2>
+                        <h5>Vil du vide mere om AI, og digital produktudvikling?</h5>
+                        <p class="card-text">På dette event, kan du lærer mere om AI, digitalproduktudvikling og prototype design</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Køge: Lyngvej 21, 4600</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver tirsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Du behøver ikke at forberede noget inden. Bare husk det gode humør</p>
+                        <a href="#koege" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/event2%20hemmeliggæst.jpg" class="card-img-top" alt="Billede 2">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Mød en iværksætter</h2>
+                        <h5>Har du lyst til at blive inspireret af en iværksætter?</h5>
+                        <p class="card-text">Både lokale iværksættere og en hemmelig gæst, kommer og præsentere deres rejse.På vo</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Næstved: Femøvej 3, 4700</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver onsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Vi håber at du har lyst til, at skabe noget fedt i fællelsskab</p>
+                        <a href="#naestved" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/event3%20meetup.jpg" class="card-img-top" alt="Billede 3">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Community Meetup</h2>
+                        <h5>Vil du hører om andre studerendes startup virksomhedder?</h5>
+                        <p class="card-text">På dette event, for du muligheden for at hører om andres rejse, og forælle din egen. En perfekt dag at blive inspireret!</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Køge: Lyngvej 21, 4600</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver tirsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Du behøver ikke at forberede noget inden. Bare husk det gode humør</p>
+                        <a href="#slagelse" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--- Overskrift over kort 3--->
+    <div class="col-12 text-center my-4">
+        <h1>Konkurrancer</h1>
+    </div>
+    <!--- Cards med de 3 Konkurrancer --->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/konkurs1.jpg" class="card-img-top" alt="Billede 1">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Startup Pitch Battle</h2>
+                        <h5>Har du en god pitch, du vil prøve af?</h5>
+                        <p class="card-text">Nu får du muligheden for at prøve din pitch af. Den bedste pitch for individuel coachingforløb + omtale på Zealands SoMe!</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Køge: Lyngvej 21, 4600</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver tirsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Du behøver ikke at forberede noget inden. Bare husk det gode humør</p>
+                        <a href="#koege" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/konkurs2.jpg" class="card-img-top" alt="Billede 2">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Team Up Challenge</h2>
+                        <h5>Studerende matches tilfældigt i teams fra forskellige uddannelser → skal udvikle en løsning sammen.</h5>
+                        <p class="card-text">Vinderen for et gavekort + mentortimer</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Næstved: Femøvej 3, 4700</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver onsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Vi håber at du har lyst til, at skabe noget fedt i fællelsskab</p>
+                        <a href="#naestved" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card card-hover h-100">
+                    <img src="images/konkurs3.jpg" class="card-img-top" alt="Billede 3">
+                    <div class="card-body d-flex flex-column">
+                        <h2 class="card-title">Problemløsning</h2>
+                        <h5>Find det bedste forslag til en løsning på et hverdagsproblem for studerende – økonomi, trivsel, transport, osv.</h5>
+                        <p class="card-text">Ideern implementeres i samarbejde med Zealand</p>
+                        <p><i class="bi bi-geo-alt text-secondary"></i> Zealand afd. Køge: Lyngvej 21, 4600</p>
+                        <p><i class="bi bi-clock text-secondary"></i> Hver tirsdag fra kl.15-18</p>
+                        <p><i class="bi bi-emoji-smile text-secondary"></i> Du behøver ikke at forberede noget inden. Bare husk det gode humør</p>
+                        <a href="#slagelse" class="btn btn-secondary btn-hover mt-auto">Læs mere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<br>
+    <br>
+    <br>
+
+    <!--- Tilmelding --->
+    <div class="container my-5" id="Tilmelding">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <div class="p-4 rounded shadow-sm text-center" style="background-color:#F7F2EA;">
+                    <h2 class="mb-3">Tilmeld dig vores nyhedsbrev, og få mere info om kommende events</h2>
+
+                    <!-- Tilmeldingsformular -->
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Din e-mail" required>
+                            <button class="btn btn-secondary" type="submit">Tilmeld</button>
+                        </div>
+                    </form>
+
+                    <hr class="my-4">
+
+                    <h5>Følg os på sociale medier - Og bliv en del af vores fællelsskab!</h5>
+
+                    <!-- SoMe-ikoner -->
+                    <div class="d-flex justify-content-center gap-3 mt-3 fs-3">
+                        <a href="https://www.facebook.com/" class="text-decoration-none text-dark">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="text-decoration-none text-dark">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer class="footer-section py-4">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- LINKS -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5 class="footer-title">Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Hjem</a></li>
+                    <li><a href="DeTreLokationer.html" class="footer-link">De Tre Lokationer</a></li>
+                    <li><a href="#" class="footer-link">Workshops & Events</a></li>
+                    <li><a href="kontakt.html" class="footer-link">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- KONTAKT INFO -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <h5 class="footer-title">Kontakt</h5>
+                <p class="footer-text">Zealand – Sjællands Erhvervsakademi</p>
+                <p class="footer-text">Campusvej 10, 4600 Køge</p>
+                <p class="footer-text">Mail: info@zealand.dk</p>
+                <p class="footer-text">Telefon: +45 50 50 50 50</p>
+            </div>
+
+            <!-- LOGO -->
+            <div class="col-md-4 text-md-end text-center">
+                <img src="images/Logo1.png" alt="Logo" class="footer-logo">
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -317,3 +317,43 @@ body, p, li, a, span {
     margin-right: auto;
   }
 }
+
+
+
+
+/* footer */
+.footer-section {
+  background-color: #C8D5C0;
+  color: white;
+}
+
+.footer-title {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: white; /* lys sekundær farve */
+}
+
+.footer-link {
+  color: #8C6A52;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #D9A5A0; /* hover accent */
+}
+
+.footer-text {
+  margin: 3px 0;
+}
+
+.footer-logo {
+  width: 250px;     /* juster størrelse */
+  height: auto;
+}
+
+/* Workshops & Events cards */
+.card-img-top {
+  height: 220px;          /* vælg den højde du ønsker */
+  object-fit: cover;      /* beskærer billedet pænt */
+  width: 100%;
+}
